@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import About from './views/About.vue'
+// import VueSocketio from 'vue-socket.io';
+// // import Home from './views/Home.vue'
+// // import Read from './views/Read.vue'
 
-Vue.use(Router)
+// Vue.use(Router);
+// Vue.use(VueSocketio, 'http://localhost:8500/testing2');
 
 export default new Router({
   routes: [
@@ -13,9 +15,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About
+      path: '/read',
+      name: 'read',
+      component: Read
     }
   ]
 })
